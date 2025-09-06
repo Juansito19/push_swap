@@ -6,12 +6,13 @@
 /*   By: jbrosio <jbrosio@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 13:23:09 by jbrosio           #+#    #+#             */
-/*   Updated: 2025/09/06 20:20:56 by jbrosio          ###   ########.fr       */
+/*   Updated: 2025/09/06 20:26:16 by jbrosio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
+/* function for print all nodes */
 // void	print_nodes(t_node **a)
 // {
 // 	t_node *temp;
