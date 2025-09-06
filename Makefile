@@ -11,27 +11,27 @@ MAKE = make -sC
 LIBFT_D = ./libft
 LIBFT = $(LIBFT_D)/libft.a
 
-SRC = push_swap.c \
-	node1.c \
-	node2.c \
-	utils1.c \
-	utils2.c \
-	utils3.c \
-	verifications.c \
-	move_push.c \
-	move_reverse_rotate.c \
-	move_swap.c \
-	move_rotate.c \
-	algorithm.c \
-	algorithm_path.c
+SRC = src/push_swap.c \
+	src/node1.c \
+	src/node2.c \
+	src/utils1.c \
+	src/utils2.c \
+	src/utils3.c \
+	src/verifications.c \
+	src/move_push.c \
+	src/move_reverse_rotate.c \
+	src/move_swap.c \
+	src/move_rotate.c \
+	src/algorithm.c \
+	src/algorithm_path.c
 
 BONUS_SRC = bonus_checker.c \
 	bonus_moves.c \
 	bonus_moves2.c
 
-OBJ = $(SRC:%.c=obj/%.o)
+OBJ = $(SRC:src/%.c=obj/%.o)
 
-BONUS_OBJ = $(BONUS_SRC:%.c=obj/%.o)
+BONUS_OBJ = $(BONUS_SRC:src/%.c=obj/%.o)
 
 all: $(LIBRARY)
 
@@ -41,7 +41,7 @@ run:
 	@echo "\e[1;32m#### [✓] Successful compilation ####\e[0m"
 	@echo "\e[1;32m####################################\n\e[0m"
 
-obj/%.o: %.c
+obj/%.o: src/%.c
 	@mkdir -p obj
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@echo "\e[1;32m##########################\e[0m"
