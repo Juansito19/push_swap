@@ -79,3 +79,89 @@ Si la secuencia es correcta, `checker` imprimirá `OK`. Si no, imprimirá `KO`.
 ## 🧑‍💻 Autor
 
 - Juan ([@Juansito19](https://github.com/Juansito19))
+
+# English
+
+# push_swap
+
+**push_swap** is a project from 42 cursus whose goal is to sort a stack of numbers using a limited set of operations and the fewest possible moves. The challenge is to implement a program that, given a set of integers, outputs an optimal list of instructions to sort the data, using only the allowed operations on two stacks (stack A and stack B).
+
+## 📚 Description
+
+The project consists of two programs:
+
+- **push_swap:** Takes a list of numbers as arguments and prints to standard output the minimal sequence of operations needed to sort them.
+- **checker:** (optional) Checks if a given sequence of operations correctly sorts the stack.
+
+The algorithm must respect important constraints:
+- Only certain operations (swap, push, rotate, and reverse rotate) can be used on the stacks.
+- The goal is to write the most efficient algorithm possible, minimizing the number of operations.
+
+## ⚙️ Allowed Operations
+
+- `sa`, `sb`: swap the first two elements at the top of stack A or B.
+- `ss`: `sa` and `sb` at the same time.
+- `pa`, `pb`: push the top element from stack B to A or vice versa.
+- `ra`, `rb`: rotate all elements of stack A or B up by one.
+- `rr`: `ra` and `rb` at the same time.
+- `rra`, `rrb`: reverse rotate all elements of stack A or B down by one.
+- `rrr`: `rra` and `rrb` at the same time.
+
+## 🛠️ Compilation
+
+Make sure you have `make` and a C compiler installed.
+
+```bash
+git clone https://github.com/Juansito19/push_swap.git
+cd push_swap
+make
+```
+
+This will generate an executable named `push_swap` in the root directory.
+
+## 🚀 Usage
+
+Run the program by passing a list of numbers to sort:
+
+```bash
+./push_swap 4 67 3 87 23
+```
+
+The output will be the sequence of operations that sorts the stack.
+
+### Example
+
+```bash
+$ ./push_swap 3 2 1
+sa
+rra
+```
+
+This means that, to sort `3 2 1`, you should swap the top two elements of stack A and then reverse rotate.
+
+## 🧪 Checker (optional)
+
+Some projects include a `checker` program to verify that the sequence of operations actually sorts the stack:
+
+```bash
+./push_swap 4 3 2 1 | ./checker 4 3 2 1
+```
+
+If the sequence is correct, `checker` will print `OK`. If not, it will print `KO`.
+
+## 📝 Implementation Notes
+
+- Error handling and argument validation are implemented to prevent unexpected behavior.
+- Different sorting strategies were used depending on the stack size to optimize the number of moves.
+
+## 📂 Project Structure
+
+- `src/`: Project source files.
+- `includes/`: Header files.
+- `Makefile`: Build automation.
+
+## 🧑‍💻 Author
+
+- Juan ([@Juansito19](https://github.com/Juansito19))
+
+---
