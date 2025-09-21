@@ -25,17 +25,17 @@ SRC = src/push_swap.c \
 	src/algorithm.c \
 	src/algorithm_path.c
 
-BONUS_SRC = bonus_checker.c \
-	bonus_moves.c \
-	bonus_moves2.c
+BONUS_SRC = src/bonus_checker.c \
+	src/bonus_moves.c \
+	src/bonus_moves2.c
 
 OBJ = $(SRC:src/%.c=obj/%.o)
 
 BONUS_OBJ = $(BONUS_SRC:src/%.c=obj/%.o)
 
-all: $(LIBRARY)
+all: $(LIBRARY) $(NAME)
 
-run:
+$(NAME):
 	@$(CC) $(CFLAGS) -g $(SRC) $(LIBRARY) -o $(NAME)
 	@echo "\e[1;32m####################################\e[0m"
 	@echo "\e[1;32m#### [✓] Successful compilation ####\e[0m"

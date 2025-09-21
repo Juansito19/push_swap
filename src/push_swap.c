@@ -6,40 +6,11 @@
 /*   By: jbrosio <jbrosio@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 13:23:09 by jbrosio           #+#    #+#             */
-/*   Updated: 2025/09/06 20:26:16 by jbrosio          ###   ########.fr       */
+/*   Updated: 2025/09/21 22:41:23 by jbrosio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
-
-/* function for print all nodes */
-// void	print_nodes(t_node **a)
-// {
-// 	t_node *temp;
-// 	int i;
-
-// 	i = 0;
-// 	temp = (*a);
-// 	while (1)
-// 	{
-// 		printf("───────────────────────────────────\n");
-// 		printf(">> Esto es el content = %ld\n", temp->content);
-// 		printf("-------------------------> NODO [%d]\n", i);
-// 		printf(">> Esto es su  index  = %d\n", temp->index);
-// 		printf(">> Esto es su  dest   = %d\n", temp->dest);
-// 		printf(">> Esto es su  cost_up   = %d\n", temp->cost_up);
-// 		printf(">> Esto es su  cost_down   = %d\n", temp->cost_down);
-// 		printf(">> Esto es su  total_cost   = %d\n", temp->total_cost);
-// 		printf(">> Esto es su  cheaper   = %d\n", temp->cheaper);
-// 		printf(">> Esto es su  prev   = %ld\n", temp->prev->content);
-// 		printf(">> Esto es su  next   = %ld\n", temp->next->content);
-// 		printf("───────────────────────────────────\n");
-// 		i++;
-// 		temp = temp->next;
-// 		if (temp == (*a))
-// 			break ;
-// 	}
-// }
 
 /* put index and dest in all nodes */
 t_node	*make_order(long int *list, int size, t_node *a)
