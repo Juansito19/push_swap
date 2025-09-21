@@ -1,6 +1,6 @@
 # push_swap
 
-**push_swap** es un proyecto del cursus 42 cuyo objetivo es ordenar una pila de números utilizando un conjunto limitado de operaciones y el menor número de movimientos posible. El desafío consiste en implementar un programa que, dado un conjunto de números enteros, genere una lista óptima de instrucciones para ordenar los datos, empleando únicamente las operaciones permitidas sobre dos pilas (stack A y stack B).
+**push_swap** es un proyecto de 42 cuyo objetivo es ordenar una pila de números utilizando un conjunto limitado de operaciones y el menor número de movimientos posible. El desafío consiste en implementar un programa que, dado un conjunto de números enteros, genere una lista óptima de instrucciones para ordenar los datos, empleando únicamente las operaciones permitidas sobre dos pilas (stack A y stack B).
 
 ## 📚 Descripción
 
@@ -67,7 +67,6 @@ Si la secuencia es correcta, `checker` imprimirá `OK`. Si no, imprimirá `KO`.
 
 ## 📝 Notas sobre la implementación
 
-- El proyecto fue desarrollado en C respetando las normas de codificación de 42.
 - El manejo de errores y validación de argumentos está implementado para evitar comportamientos indeseados.
 - Se usaron distintas estrategias de ordenación según el tamaño de la pila para optimizar el número de movimientos.
 
