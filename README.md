@@ -170,4 +170,4 @@ If the sequence is correct, `checker` will print `OK`. If not, it will print `KO
 
 ---
 
-[ir arriba](#push_swap)
+[ir arriba | got to top](#push_swap)
