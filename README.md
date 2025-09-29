@@ -169,3 +169,5 @@ If the sequence is correct, `checker` will print `OK`. If not, it will print `KO
 - Juan ([@Juansito19](https://github.com/Juansito19))
 
 ---
+
+[ir arriba](#push_swap)
